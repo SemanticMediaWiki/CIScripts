@@ -6,7 +6,6 @@ MW_INSTALL_PATH=$BASE_PATH/../mw
 
 cd $MW_INSTALL_PATH
 
-if [ "$PHPUNIT" != "" ]
-then
-		composer require 'phpunit/phpunit='$PHPUNIT --update-with-dependencies
+if [ "$PHPUNIT" != "" ]; then
+  composer require 'phpunit/phpunit='$PHPUNIT --update-with-dependencies
 fi
