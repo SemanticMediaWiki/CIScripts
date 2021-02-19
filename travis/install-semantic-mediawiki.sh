@@ -8,7 +8,7 @@ if [ "$SMW" != "" ]; then
   cd $MW_INSTALL_PATH
 
   # Install
-  composer require "mediawiki/semantic-media-wiki=$SMW" --update-with-dependenciess
+  composer require "mediawiki/semantic-media-wiki=$SMW" --update-with-dependencies
 
   # Configure
   echo 'wfLoadExtension( "SemanticMediaWiki" );' >> LocalSettings.php
